@@ -8,7 +8,7 @@ function Main({ seccion }) {
     <main>
       {seccion === "inicio" && (
         <div className="inicio-container page-content">
-          <img src="/public/IzquieraCafe.jpg" alt="Café" className="side-img" />
+          <img src="/IzquieraCafe.jpg" alt="Café" className="side-img" />
 
           <div className="central-box">
             <h1>Bienvenido a Cafetería SOHO</h1>
@@ -19,7 +19,7 @@ function Main({ seccion }) {
             </p>
           </div>
 
-          <img src="/public/DerechaCafe.jpg" alt="Café" className="side-img" />
+          <img src="/DerechaCafe.jpg" alt="Café" className="side-img" />
         </div>
       )}
 
