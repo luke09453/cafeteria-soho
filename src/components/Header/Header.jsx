@@ -1,9 +1,14 @@
 import "./Header.css";
+
 function Header({ setSeccion }) {
   return (
-    <header className="main-header">
-      <div className="header-left">
-        <img src="/Logo_SOHO.jpeg" alt="SoHo logo" className="header-logo" />
+    <header>
+      <div className="header-left" onClick={() => setSeccion("inicio")}>
+        <img
+          src="/Logo_SOHO.jpeg"
+          alt="Logo Cafetería SOHO"
+          className="header-logo"
+        />
         <h1>Cafetería SOHO</h1>
       </div>
 
@@ -24,3 +29,4 @@ function Header({ setSeccion }) {
 }
 
 export default Header;
+
