@@ -1,3 +1,4 @@
+import "./Header.css";
 function Header({ setSeccion }) {
   return (
     <header className="main-header">
