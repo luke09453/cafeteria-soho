@@ -1,0 +1,124 @@
+:root {
+  --dark: #3a2e2a;
+  --mid: #7b5844;
+  --tan: #c89f7a;
+  --cream: #f8f4ef;
+  --accent: #d77a2f;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark);
+}
+
+
+.bebidas-header {
+  background: linear-gradient(180deg, var(--mid), var(--dark));
+  color: var(--cream);
+  text-align: center;
+  padding: 40px 30px;
+  background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=60');
+  background-size: cover;
+  background-position: center;
+  position: sticky; 
+  top: 0;
+  z-index: 100; 
+}
+.bebidas-header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+
+.menu-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+.card {
+  background-color: var(--tan);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px 20px;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: var(--mid);
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.card-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-content ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--accent);
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
